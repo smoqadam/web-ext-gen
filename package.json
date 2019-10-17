@@ -1,0 +1,16 @@
+{
+  "name": "weg",
+  "version": "0.0.1",
+  "description": "WebExtension boilerplate generator",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/smoqadam/weg",
+  "author": "Saeed Moqadam <saeed.moqadam@gmail.com> (https://github.com/smoqadam)",
+  "engines": {
+    "node": ">=8.1.4"
+  },
+  "dependencies": {
+    "inquirer": "7.0.0",
+    "ncp": "^2.0.0"
+  }
+}
