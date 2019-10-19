@@ -171,16 +171,29 @@ inquirer
             }
         };
 
-        fs.appendFile('./manifest.json', JSON.stringify(manifest), function (err) {
+	    
+
+
+	fs.mkdir(answers.name, function(e){
+	    if(!e || (e && e.code === 'EEXIST')){
+		console.log('exists');	
+            } else {
+                 console.log('not');
+            
+    	    }
+	});
+
+
+	    
+        fs.appendFile('./'+answers.name+'/manifest.json', JSON.stringify(manifest), function (err) {
             if (err) throw err;
             console.log('Saved!');
           }); 
-
         ncp.limit = 16;
         var path = require('path');
-        var appDir = path.dirname(require.main.filename)+"/template";
+        var appDir = path.dirname(path.dirname(require.main.filename))+"/template";
         console.log(appDir);
-        ncp(appDir, "./", function (err) {
+        ncp(appDir, "./"+answers.name, function (err) {
          if (err) {
            return console.error(err);
          }

@@ -1,6 +1,6 @@
 {
   "name": "web-ext-gen",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "WebExtension boilerplate generator",
   "license": "MIT",
   "main": "index.js",
