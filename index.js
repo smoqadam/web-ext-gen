@@ -1,7 +1,7 @@
 var fs = require('fs');
 var inquirer = require('inquirer');
 var ncp = require('ncp').ncp;
-
+var generate = function(){
 inquirer
     .prompt([
         {
@@ -188,3 +188,6 @@ inquirer
         });
 
     });
+};
+
+exports.generate = generate;

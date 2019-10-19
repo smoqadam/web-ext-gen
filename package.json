@@ -1,13 +1,17 @@
 {
-  "name": "webg",
+  "name": "web-ext-gen",
   "version": "0.0.2",
   "description": "WebExtension boilerplate generator",
   "license": "MIT",
   "main": "index.js",
   "repository": "https://github.com/smoqadam/weg",
   "author": "Saeed Moqadam <saeed.moqadam@gmail.com> (https://github.com/smoqadam)",
+  "preferGlobal": true,
   "engines": {
     "node": ">=8.1.4"
+  },
+  "bin": {
+    "web-ext-gen": "./bin/index.js"
   },
   "dependencies": {
     "inquirer": "7.0.0",
