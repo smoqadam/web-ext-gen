@@ -1,8 +1,8 @@
 ## WebExtension Boilerplate Generator
 
 ### Install
-`$ npm install -g weg`
+`$ npm install -g web-ext-gen`
 
 ### Usage
 
-`$ weg`
+`$ web-ext-gen`
